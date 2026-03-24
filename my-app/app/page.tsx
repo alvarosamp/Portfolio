@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import {FiDownload} from "react-icons/fi";
 import Social from "@/components/ui/Social";
 import Photo from "@/components/Photo";
+import Stats from "@/components/Stats";
 const Home = () => {
   return ( <section className = 'h-full'>
     <div className = 'container mx-auto'>
@@ -37,8 +38,9 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Stats />
   </section>
-  );
+  ); 
 };
 
 export default Home;
