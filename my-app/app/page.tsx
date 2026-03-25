@@ -10,11 +10,11 @@ const Home = () => {
       <div className = 'flex flex-col xl:flex-row items-center justify-between xl:pt-2 xl:pb-12'>
         {/* text */}
         <div className = 'text-center xl:text-left order-2 xl:order-none mt-[-32px] xl:mt-[-48px]'>
-          <span className= 'text-xl'>AI Engineer</span>
+          <span className= 'text-lg md:text-xl'>AI Engineer</span>
           <h1 className = 'h1 mb-4'>
             Hello I'm <br /><span className='text-accent'> Álvaro Sampaio</span>
           </h1>
-          <p className = 'max-w-[500px] mb-9 text-white/80'>
+          <p className = 'max-w-[700px] mb-9 text-white/80 text-lg md:text-xl'>
             I excel at crafting elegant digital experiences and I am 
             proficient in various programming languages and frameworks, including Python, JavaScript, and React.
           </p>

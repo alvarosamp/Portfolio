@@ -53,3 +53,16 @@ body {
   @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
 }
+
+.text-outline{
+  -webkit-text-stroke: 1px #ffffff;
+}
+.text-outline-hover{
+  -webkit-text-stroke: 1px #00ff99;
+}
+
+/* Change stroke color on parent .group hover so Tailwind variant isn't required */
+.group:hover .text-outline{
+  -webkit-text-stroke: 1px var(--color-accent);
+  -webkit-text-fill-color: transparent;
+}

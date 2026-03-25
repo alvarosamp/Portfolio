@@ -35,7 +35,7 @@ const MobileNav = () => {
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="text-2xl text-accent"
+        className="text-3xl text-accent p-2"
         aria-label="Toggle mobile menu"
         aria-expanded={open}
       >
@@ -43,14 +43,14 @@ const MobileNav = () => {
       </button>
 
       {open ? (
-        <div className="absolute right-0 top-12 z-50 min-w-44 rounded-lg border border-white/20 bg-primary p-4 shadow-lg">
-          <nav className="flex flex-col gap-3">
+        <div className="absolute right-0 top-12 z-50 min-w-48 rounded-lg border border-white/20 bg-primary p-6 shadow-lg">
+          <nav className="flex flex-col gap-4">
             {links.map((link) => (
               <Link
                 key={link.path}
                 href={link.path}
                 onClick={() => setOpen(false)}
-                className={pathname === link.path ? "text-accent" : "text-white"}
+                className={`${pathname === link.path ? "text-accent" : "text-white"} text-lg md:text-xl py-2`}
               >
                 {link.name}
               </Link>
